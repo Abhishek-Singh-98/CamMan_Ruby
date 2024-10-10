@@ -1,0 +1,23 @@
+<h1>New Camera Man</h1><br>
+
+<%= form_with model: @camera_man, local: true, scope: :camera_man do |f| %>
+    <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
+    <div class="field">
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+    </div>
+    <div class="field">
+        <%= f.label :phone_number %>
+        <%= f.text_field :phone_number %>
+    </div>
+    <div class="field">
+        <%= f.label :company_name %>
+        <%= f.text_field :company_name %>
+    </div>
+    <div class="create">
+        <%= f.submit "Create Camera Man" %>
+    </div>
+<%end%>
