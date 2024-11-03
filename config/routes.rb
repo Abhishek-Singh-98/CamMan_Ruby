@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   namespace :signups_module do
     post '/signup', to: "signups#signup_user"
   end
+  namespace :logins_module do
+    post '/login', to: "logins#login_user"
+  end
   namespace :users_module do
     resources :camera_men
   end  
