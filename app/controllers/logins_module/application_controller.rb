@@ -1,4 +1,4 @@
-class UsersModule::ApplicationController < ApplicationController
+class LoginsModule::ApplicationController < ApplicationController
   include JwtAuthentication
 
   def authenticate
