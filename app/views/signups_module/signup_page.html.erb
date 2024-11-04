@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <h1 style="color: Green;"align="center">Signup Page</h1>
+    </head>
+    <body>
+        <form action="/signups_module/signup" method="post" style="margin: 100px 420px; color: brown">
+            <fieldset style="height: 200px; width: 400px">
+                <label>Email:
+                    <input name="email" placeholder= "Enter Email Here.." required>
+                </label><br><br>
+                <label>Password:
+                    <input type="password" name="password" placeholder= "Enter password Here.." required>
+                </label><br><br>
+                <label>Confirm Password:
+                    <input type="password" name="password_confirmation" placeholder= "Confirm Password Here.." required>
+                </label>
+                <p>
+                User Role :
+                    <label>
+                    <input type="radio" name="user_role" value="camman" required> Camera Man
+                    </label>
+                    <label>
+                    <input type="radio" name="user_role" value="client" required> Client User
+                    </label>
+                </p>
+                <p>
+                    <button type="submit">Signup</button>
+                </p>
+                <p>
+                    <label>If you already registered?</label>
+                    <a href="">Login</button>
+                </p>
+            </fieldset>
+        </form>
+    </body>
+</html>
