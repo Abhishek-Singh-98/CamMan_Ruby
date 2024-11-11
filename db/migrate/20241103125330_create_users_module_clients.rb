@@ -1,10 +1,9 @@
-class CreateUsersModuleCameraMen < ActiveRecord::Migration[7.0]
+class CreateUsersModuleClients < ActiveRecord::Migration[7.0]
   def change
-    create_table :camera_men do |t|
+    create_table :clients do |t|
       t.string :name
       t.string :email
       t.string :phone_number
-      t.string :company_name
       t.string :password_digest
       t.timestamps
     end

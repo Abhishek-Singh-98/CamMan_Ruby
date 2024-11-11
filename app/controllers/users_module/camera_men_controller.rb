@@ -1,6 +1,6 @@
 module UsersModule
   class CameraMenController < ApplicationController
-    
+    before_action :authenticate, only: [:show]
     def new
       @camera_man = CameraMan.new 
     end
@@ -25,7 +25,7 @@ module UsersModule
     
     private
     def cam_params
-      params.require(:camera_man).permit(:name, :company_name, :email, :phone_number)
+      params.require(:camera_man).permit(:name, :company_name, :email, :phone_number, :password_digest)
     end
   end
 end
